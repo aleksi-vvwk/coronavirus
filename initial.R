@@ -16,6 +16,13 @@ summary_df <- coronavirus %>%
 
 summary_df %>% head(20)
 
+summary_df[summary_df$country %in% "Estonia", ]
+summary_df[summary_df$country %in% "Finland", ]
+summary_df[summary_df$country %in% "Latvia", ]
+summary_df[summary_df$country %in% "Lithuania", ]
+summary_df[summary_df$country %in% "Ukraine", ]
+
+
 # Summary of new cases during the past 24 hours by country and type (as of 2021-09-17):
 
 library(tidyr)
@@ -75,3 +82,4 @@ covid19_vaccine %>%
     xaxis = list(title = "Source: Johns Hopkins Centers for Civic Impact",
                  ticksuffix = "%")
   )
+
